@@ -1,5 +1,6 @@
 // With wildcard import
 FuseBox.import('./lib/*/*.spec');
+FuseBox.import('./lib/*/*/*.spec');
 // require('./lib/*');
 
 // File by file
