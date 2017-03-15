@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "node ./fusebox.js"
+    "build": "node ./fusebox.js",
+    "start": "node ./dist/main.js"
   },
   "author": "Vincent Tabary",
   "license": "ISC",
