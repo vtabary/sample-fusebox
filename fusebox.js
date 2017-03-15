@@ -8,5 +8,5 @@ let fuse = FuseBox.init({
   ],
 });
 
-// fuse.bundle('>main.ts **/*.spec.ts');
-fuse.bundle('>main.ts');
+fuse.bundle('>main.ts +lib/**/*.spec.ts');
+// fuse.bundle('>main.ts');
