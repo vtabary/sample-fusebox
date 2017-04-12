@@ -4,7 +4,9 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "node ./fusebox.js",
+    "build:library": "node ./fusebox-library.js",
+    "build:project": "node ./fusebox.js",
+    "build": "npm run build:library && npm run build:project",
     "start": "node ./dist/main.js"
   },
   "author": "Vincent Tabary",
@@ -12,5 +14,8 @@
   "devDependencies": {
     "fuse-box": "^1.3.128",
     "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^2.0.3"
   }
 }
