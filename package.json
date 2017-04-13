@@ -19,6 +19,7 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
+    "lodash.merge": "^4.6.0",
     "whatwg-fetch": "^2.0.3"
   }
 }
