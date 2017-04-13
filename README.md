@@ -1,6 +1,6 @@
 # sample-fusebox
 
-Use the FuseBox wildcard mecanism to import specs files.
+Try to illustrate a bundle to provide a reusable library
 
 To build, run :
 
@@ -14,8 +14,22 @@ To start, run :
 $ npm run start
 ```
 
-If the files are required, you should see :
+Or both :
+
 ```
-use a/a.spec.ts
-use b/b.spec.ts
+$ npm run build && npm run start
+```
+
+You should see this error :
+
+```
+Package not found whatwg-fetch
+```
+
+Although the library is in the dist file.
+
+It's working with nodejs :
+
+```
+$ npm run start:node
 ```

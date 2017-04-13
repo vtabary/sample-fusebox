@@ -4,12 +4,11 @@ let fuse = FuseBox.init({
   homeDir: './',
   outFile: './dist/lib.js',
   package: {
-    name: 'library'
+    name: 'library',
   },
-  plugins:[
+  plugins: [
     TypeScriptHelpers(),
   ],
 });
 
 fuse.bundle('>[src/lib/index.ts]');
-// fuse.bundle('>main.ts');
