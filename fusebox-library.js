@@ -6,6 +6,9 @@ let fuse = FuseBox.init({
   package: {
     name: 'library',
   },
+  globals: {
+    library: '*',
+  },
   plugins: [
     TypeScriptHelpers(),
   ],
