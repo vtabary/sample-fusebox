@@ -2,10 +2,9 @@ const { FuseBox, TypeScriptHelpers } = require('fuse-box');
 
 let fuse = FuseBox.init({
   homeDir: './',
-  outFile: './dist/lib.js',
-  package: {
-    name: 'library',
-  },
+  output: './dist/$name.js',
+  package: 'library',
+  sourceMaps: true,
   globals: {
     library: '*',
   },
@@ -14,4 +13,7 @@ let fuse = FuseBox.init({
   ],
 });
 
-fuse.bundle('>[src/lib/index.ts]');
+fuse.bundle('lib')
+  .instructions('>[src/lib/index.ts]');
+
+fuse.run();

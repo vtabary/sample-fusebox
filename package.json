@@ -14,7 +14,7 @@
   "author": "Vincent Tabary",
   "license": "ISC",
   "devDependencies": {
-    "fuse-box": "^1.3.128",
+    "fuse-box": "^2.0.0",
     "phantomjs": "^2.1.7",
     "typescript": "^2.2.1"
   },
