@@ -8,15 +8,15 @@
     "build:project": "node ./fusebox.js",
     "build": "npm run build:library && npm run build:project",
     "start": "npm run start:browser",
-    "start:browser": "phantomjs ./dist/main.js",
-    "start:node": "node ./dist/main.js"
+    "start:browser": "phantomjs ./dist/project.js",
+    "start:node": "node ./dist/project.js"
   },
   "author": "Vincent Tabary",
   "license": "ISC",
   "devDependencies": {
-    "fuse-box": "^2.0.0",
+    "fuse-box": "^2.0.11",
     "phantomjs": "^2.1.7",
-    "typescript": "^2.2.1"
+    "typescript": "^2.3.4"
   },
   "dependencies": {
     "lodash.merge": "^4.6.0",

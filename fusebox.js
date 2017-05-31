@@ -3,14 +3,13 @@ const { FuseBox, TypeScriptHelpers } = require('fuse-box');
 let fuse = FuseBox.init({
   homeDir: './',
   output: './dist/$name.js',
-  package: 'project',
-  sourceMaps: true,
+  package: {
+    name: 'project',
+    main: './src/project/main',
+  },
   globals: {
     project: '*',
   },
-  plugins: [
-    TypeScriptHelpers(),
-  ],
 });
 
 fuse.bundle('project')
