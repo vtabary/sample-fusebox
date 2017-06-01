@@ -7,7 +7,7 @@ import { test } from '../../dist/lib';
 console.log('*** import test function => ', (test !== undefined? 'found' : 'not found'));
 
 
-console.log('*** whatwg-fetch should be the same in both files', test() === fetch);
+console.log('*** whatwg-fetch should be the same in both files => ', test() === fetch);
 
 declare var phantom;
 if (typeof phantom !== 'undefined') {
